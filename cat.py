@@ -34,3 +34,11 @@ def view_file(args):
         with open(args.filename, 'r') as fp:
             print(fp.read())
 
+
+def main():
+    args = get_args()
+    view_file(args)
+
+
+if __name__=='__main__':
+    main()
